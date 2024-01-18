@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ Console Module """
+
 import cmd
 import sys
 from models.base_model import BaseModel
@@ -31,7 +32,7 @@ class HBNBCommand(cmd.Cmd):
             }
 
     def preloop(self):
-        """Prints if isatty is false"""
+        """ Prints if is atty is false"""
         if not sys.__stdin__.isatty():
             print('(hbnb)')
 
